@@ -1,7 +1,38 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /* tablet */
+  header {
+    padding-top: 25px;
+  }
+  #mobile {
+    display: none;
+  }
+  #tablet-pc {
+    display: block;
+  }
+  .container {
+    margin: auto 40px;
+  }
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   /* desktop */
+  header {
+    padding-top: 35px;
+  }
+  #mobile {
+    display: none;
+  }
+  #tablet-pc {
+    display: block;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
