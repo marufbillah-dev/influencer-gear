@@ -17,7 +17,34 @@
 .container {
   margin: auto 16px;
 }
+img {
+  width: 100%;
+}
+section {
+  padding: 25px 0;
+}
+.btn {
+  color: white;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--magenta);
+  border-radius: 41px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.btn:hover {
+  background-color: #ff0084;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
 
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
 /* navbar starts */
 header {
   padding-top: 15px;
@@ -58,9 +85,50 @@ header {
   color: var(--dark-1);
   font-weight: 600;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 .menu-icon:hover,
 .nav-menu-container li .menu-item:hover {
   color: var(--magenta);
 }
 /* navbar ends */
+
+/* hero section starts */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  text-align: center;
+}
+.hero-banner {
+  background: url(../images/circle-design.svg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 260px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner img {
+  width: 90%;
+}
+.hero-contents {
+  width: 100%;
+}
+.hero-title {
+  color: var(--dark-1);
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+.hero-desc {
+  color: var(--dark-1);
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+/* hero section ends */
