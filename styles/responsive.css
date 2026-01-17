@@ -53,6 +53,12 @@
     max-width: 90%;
   }
   /* hero section ends */
+
+  /* sponsors-section starts */
+  .sponsors-container {
+    gap: 30px;
+  }
+  /* sponsors-section ends */
 }
 
 @media screen and (min-width: 1024px) {
@@ -107,4 +113,13 @@
     max-width: 505px;
   }
   /* hero section ends */
+
+  /* sponsors-section starts */
+  .sponsors-container {
+    justify-content: space-around;
+  }
+  .sponsors-logo {
+    height: 35px;
+  }
+  /* sponsors-section ends */
 }
