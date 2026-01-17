@@ -13,6 +13,7 @@
   --dark-2: #18191f;
   --gray: #787885;
   --magenta: rgba(224, 44, 109, 0.87);
+  --orange: #fb8200;
 }
 .container {
   margin: auto 16px;
@@ -151,3 +152,77 @@ header {
   object-fit: cover;
 }
 /* sponsors-section ends */
+
+/* collection section starts */
+.collection-title {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: var(--dark-1);
+  font-weight: 600;
+  text-align: center;
+}
+.collection-card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: fit-content;
+  grid-gap: 15px;
+  margin: 0 auto 30px;
+}
+.collection-card {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  margin: 0 auto;
+}
+.collection-card img {
+  width: 300px;
+  height: 256px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.collection-card .card-title {
+  font-size: 1.75rem;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+}
+.collection-card .price {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: var(--dark-2);
+}
+.collection-card .rating-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+.collection-card .stars {
+  color: var(--orange);
+}
+.collection-card .rating {
+  color: #5e6366;
+}
+.collection-card > p {
+  color: var(--gray);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#collection .see-more {
+  text-align: right;
+}
+#collection .see-more a {
+  color: var(--magenta);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+#collection .see-more a:hover {
+  color: #ff0084;
+}
+/* collection section ends */
