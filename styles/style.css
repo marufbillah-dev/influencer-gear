@@ -287,3 +287,41 @@ header {
   margin: 0 auto;
 }
 /* featured section ends */
+
+/* footer starts */
+footer {
+  padding: 50px;
+  background-color: #0a0826;
+  color: white;
+  text-align: center;
+}
+footer h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+footer p {
+  color: #d9dbe1;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+footer .social-icons {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 32px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+footer .social-icons a {
+  font-size: 1rem;
+  color: white;
+}
+/* footer ends */
